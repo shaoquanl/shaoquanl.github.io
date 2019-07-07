@@ -2,8 +2,8 @@
   "name": "Lei",
   "version": "0.0.1",
   "scripts": {
-    "start": "ljbisheng start -c ./site/bisheng.config.js",
-    "build": "ljbisheng build -c ./site/bisheng.config.js && cp -f ./_site/index.html ./index.html && cp -rf ./_site/* ./comp"
+    "start": "node ./tmp.js dev && ljbisheng start -c ./site/bisheng.config.js",
+    "build": "node ./tmp.js pro && ljbisheng build -c ./site/bisheng.config.js && cp -f ./_site/index.html ./index.html && cp -rf ./_site/* ./comp && node ./tmp.js dev"
   },
   "repository": {
     "type": "git",
