@@ -1,0 +1,28 @@
+@import './var.less';
+
+.page-404 {
+  width: 600px;
+  min-height: 100%;
+  min-height: calc(~"100vh - 120px");
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  a{
+    color: @baseColor;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  .placeholder{
+    width: 600px;
+    height: 420px;
+    margin: 60px auto 0;
+    background: url('../img/404.png') center center no-repeat;
+    background-size: 100%;
+  }
+  .tip{
+    margin-top: 30px;
+  }
+}
