@@ -33,14 +33,12 @@ export default class Header extends React.Component{
     docHeaders(){
         let that = this
         config.docHeader = config.docHeader || []
-        let show = that.state.open ? 'block' : 'none'
 
         return (
             <Menu
                 mode="horizontal"
                 className="header-menu"
                 defaultSelectedKeys={that.state.selectedKey}
-                style={{display:`${show}`}}
                 onClick={that.handlerMenu.bind(that)}
             >
             {
