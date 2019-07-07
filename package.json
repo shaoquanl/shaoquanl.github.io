@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "start": "ljbisheng start -c ./site/bisheng.config.js",
-    "build": "ljbisheng build -c ./site/bisheng.config.js"
+    "build": "ljbisheng build -c ./site/bisheng.config.js && cp -f ./_site/index.html ./index.html"
   },
   "repository": {
     "type": "git",
